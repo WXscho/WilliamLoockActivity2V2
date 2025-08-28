@@ -1,0 +1,78 @@
+
+:root {
+    --primary-color:seagreen;
+    --secondary-color:rgb(227,23,10);
+    --third-color:rgb(132,108,91);
+    --text-background: rgb(252,255,255);
+    --fourth-color: #007bff;
+    --display-font:'Times New Roman', Times, serif;
+    --header-font: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --nav-text-size:1.5em;
+    --event-margin-bottom:30px;
+    --nav-margin: 0 0 0 0;
+    /* Light and Dark Mode*/
+}
+
+html{
+    font-size: 1em;
+    color:black;
+}
+body{
+    margin:0;
+}
+h1{
+    font-family: var(--header-font);
+}
+h1{
+    margin: 60px 0;
+}
+ul {
+  list-style-type: none;
+  margin:0;
+}
+li{
+    display: inline-block;
+}
+li >a{
+    color:black;
+    transition: color .5s;
+}
+a:hover{
+    color:var(--secondary-color);
+}
+nav{
+    font-family: var(--header-font);
+    margin: var(--nav-margin);
+    background-color: var(--primary-color);
+    font-size: var(--nav-text-size);
+}
+#nav-menu-top > ul > li> a {
+    text-decoration: none; 
+}
+p{
+    font-family:var(--display-font) ;
+}
+.div-history-event{
+    display:flex;
+    flex-direction:column;
+    background-color: var(--text-background);
+    border-bottom: 1px solid black;    
+    margin-bottom:var(--event-margin-bottom);
+}
+
+.div-history-event-header{
+    background-color: var(--primary-color);
+}
+.div-history-event-header h2{
+    margin-top: 0;
+}
+.div-history-event-header img{
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    
+}
+.profile-picture{
+    width: 30%;
+    height: auto;
+}
